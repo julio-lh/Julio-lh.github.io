@@ -490,6 +490,140 @@ section h2 {
   text-decoration: underline;
 }
 
+/* --- Ementa (lista numerada com tags) --- */
+
+.ementa-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: ementa-counter;
+}
+
+.ementa-list li {
+  counter-increment: ementa-counter;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.ementa-list li:last-child {
+  border-bottom: none;
+}
+
+.ementa-list li::before {
+  content: counter(ementa-counter, decimal-leading-zero);
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--card-bg);
+  background: var(--ink);
+  border: 2px solid var(--ink);
+  margin-top: 1px;
+}
+
+.ementa-list .ementa-text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ementa-list .ementa-tag {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+/* --- Slides (lista numerada de links) --- */
+
+.slide-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: slide-counter;
+}
+
+.slide-item {
+  counter-increment: slide-counter;
+}
+
+.slide-item a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 4px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease, padding-left 0.15s ease;
+}
+
+.slide-item:last-child a {
+  border-bottom: none;
+}
+
+.slide-item a:hover {
+  background: var(--chip-bg);
+  padding-left: 12px;
+}
+
+.slide-item a::before {
+  content: counter(slide-counter, decimal-leading-zero);
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--card-bg);
+  background: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.slide-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.slide-name {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.slide-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.slide-item a:hover .slide-name {
+  color: var(--accent);
+}
+
+.slide-arrow {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.slide-item a:hover .slide-arrow {
+  color: var(--accent);
+}
+
 element::-webkit-scrollbar {
   display: none;
 }

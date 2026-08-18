@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M0422 — Julio López</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <style>
+    .ementa-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: ementa-counter;
+    }
+
+    .ementa-list li {
+      counter-increment: ementa-counter;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .ementa-list li:last-child {
+      border-bottom: none;
+    }
+
+    .ementa-list li::before {
+      content: counter(ementa-counter, decimal-leading-zero);
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--card-bg);
+      background: var(--ink);
+      border: 2px solid var(--ink);
+      margin-top: 1px;
+    }
+
+    .ementa-list .ementa-text {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .ementa-list .ementa-tag {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav">
+    <a href="../../index.html">Home</a>
+    <a href="../../publications.html">Publications</a>
+    <a href="../../talks.html">Talks</a>
+    <a href="../../teaching.html" class="active">Teaching</a>
+    <a href="../../contact.html">Contact</a>
+  </nav>
+
+  <div class="card">
+
+    <a href="../../teaching.html" class="back-link">← Back to Teaching</a>
+
+    <h1 class="profile-name" style="margin-bottom: 4px;">M0422/MC938A Algoritmos Criptográficos</h1>
+    <p class="profile-meta" style="margin-bottom: 30px;">2026</p>
+
+        <section>
+      <h2>Horário das Aulas</h2>
+      <table class="schedule-table">
+        <tr>
+          <th>Tipo</th>
+          <th>Dia</th>
+          <th>Sala</th>
+          <th>Horário</th>
+        </tr>
+        <tr>
+          <td>Teórica</td>
+          <td>Terça-feira</td>
+          <td>CC51</td>
+          <td>19:00 - 21:00</td>
+        </tr>
+        <tr>
+          <td>Teórica</td>
+          <td>Quinta-feira</td>
+          <td>CC51</td>
+          <td>19:00 - 21:00</td>
+        </tr>
+      </table>
+    </section>
+    
+    <section>
+      <h2>Ementa</h2>
+      <ul class="ementa-list">
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Introdução</span>
+            Breve introdução à criptografia.
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Fundamentos</span>
+            Algoritmos computacionais básicos: aritmética modular, máximo divisor comum, multiplicação de polinômios e aritmética de números grandes.
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Corpos finitos</span>
+            Aritmética em corpos finitos GF(p<sup>m</sup>).
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Cifradores</span>
+            Cifradores de bloco e fluxo (AES, ChaCha20).
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Criptografia autenticada</span>
+            Algoritmos simétricos autenticados: AES-GCM, ChaCha20-Poly1305 e Ascon-AEAD128.
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Funções de resumo</span>
+            Família SHA (SHA-1, SHA-2, SHA-3), entre outros.
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Criptografia assimétrica</span>
+            Conceitos, encriptação, mecanismos de encapsulamento de chaves e assinatura digital. Algoritmos de chave pública: RSA, DSA, ECDSA e EdDSA.
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Pós-quântica</span>
+            Introdução a algoritmos pós-quânticos.
+          </div>
+        </li>
+        <li>
+          <div class="ementa-text">
+            <span class="ementa-tag">Tópicos complementares</span>
+            Geração de números pseudo-aleatórios, padrões industriais de criptografia, implementação em software e bibliotecas.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section>
+      <h2>Atendimento</h2>
+      <p class="bio-text">Terça-feira, 18:00-19:00 (ou horário agendado).</p>
+      <div class="contact-field">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">jlopez@ic.unicamp.br</div>
+      </div>
+      <div class="contact-field">
+        <div class="contact-label">Sala</div>
+        <div class="contact-value">Sala 34</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Avaliação</h2>
+      <p class="bio-text">
+        A avaliação é composta por duas provas teóricas (PT1 e PT2) ao longo do semestre e um projeto
+        teórico-prático, com relatório escrito e apresentação oral, a ser entregue em 8 de dezembro de 2026.
+      </p>
+      <ul class="grading-list">
+        <li>
+          <span>Prova I (PT1) — 06/10, 19:00-21:00</span>
+          <span class="grading-weight">peso 3</span>
+        </li>
+        <li>
+          <span>Prova II (PT2) — 26/11, 19:00-21:00</span>
+          <span class="grading-weight">peso 2</span>
+        </li>
+        <li>
+          <span>Projeto — entrega 08/12</span>
+          <span class="grading-weight">30%</span>
+        </li>
+      </ul>
+      <p class="bio-text" style="margin-top: 14px;">
+        <strong>Pós-graduação (MC938A):</strong> a média das provas compõe 70% da média do semestre e o
+        projeto compõe os outros 30%. É necessário obter média do semestre e nota do projeto maiores ou
+        iguais a 5,0 para aprovação, com conceito final de A a D conforme a média obtida.
+      </p>
+      <p class="bio-text">
+        <strong>Graduação (MO422):</strong> a mesma composição de provas e projeto é usada para calcular a
+        nota final numérica, seguindo as regras padrão de aprovação da graduação.
+      </p>
+    </section>
+
+    <section>
+  <h2>Course Materials</h2>
+  <div class="resource-links">
+    <a href="https://drive.google.com/file/d/1GjkpeFEqnOr3xIIUuOeKSNVQoxFc2pYh/view?usp=sharing" class="resource-link" target="_blank">PDD</a>
+     <a href="slidesM0422.html" class="resource-link">Slides</a>
+  </div>
+</section>
+
+<section>
+  <h2>Apresentações</h2>
+  <div class="resource-links">
+    <a href="index.html" class="resource-link" target="_blank">Tópicos de Apresentação (PDF)</a>
+    <a href="index.html" class="resource-link" target="_blank">Datas das Apresentações</a>
+    <a href="index.html" class="resource-link" target="_blank">Link para Excel</a>
+  </div>
+</section>
+
+    <section>
+      <h2>Recommended Books</h2>
+
+      <p class="bio-text" style="margin-top: 18px;"><strong>Principais textos adotados nesta disciplina:</strong></p>
+      <ul class="textbook-list">
+        <li>
+          <div class="textbook-title">Introduction to Modern Cryptography</div>
+          <div class="textbook-meta">Jonathan Katz, Yehuda Lindell — Chapman and Hall/CRC, 3ª edição, 2025</div>
+        </li>
+        <li>
+          <div class="textbook-title">Understanding Cryptography: From Established Symmetric and Asymmetric Ciphers to Post-Quantum Algorithms</div>
+          <div class="textbook-meta">Christof Paar, Jan Pelzl, Tim Güneysu — Springer, 2024</div>
+        </li>
+      </ul>
+
+      <p class="bio-text" style="margin-top: 26px;"><strong>Outros textos adicionais:</strong></p>
+      <ul class="textbook-list">
+        <li>
+          <div class="textbook-title">Cryptography Theory and Practice</div>
+          <div class="textbook-meta">Douglas Stinson, Maura Paterson — Chapman and Hall/CRC, 4ª edição, 2018</div>
+        </li>
+        <li>
+          <div class="textbook-title">Cryptography and Network Security (Principles and Practice)</div>
+          <div class="textbook-meta">William Stallings — Pearson, 8ª edição, 2023</div>
+        </li>
+        <li>
+          <div class="textbook-title">A Gentle Introduction to Lattice-Based Cryptography</div>
+          <div class="textbook-meta">Alfred Menezes, 2026 — <a href="https://eprint.iacr.org/2026/1098" target="_blank" class="course-link">eprint.iacr.org/2026/1098</a></div>
+        </li>
+        <li>
+          <div class="textbook-title">Cryptography: An Introduction</div>
+          <div class="textbook-meta">Nigel Smart, 3ª edição — <a href="https://www.cs.umd.edu/~waa/414-F11/IntroToCrypto.pdf" target="_blank" class="course-link">cs.umd.edu/~waa/414-F11/IntroToCrypto.pdf</a></div>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
